@@ -1,1 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@100;300;400;700&display=swap");
+
+// reset styles
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// fonts
+$font-heading: "Cookie";
+$font-body: "Lato", sans-serif;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+h1 {
+  font-family: $font-heading;
+}
