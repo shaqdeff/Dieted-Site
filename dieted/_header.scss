@@ -1,0 +1,40 @@
+.header {
+  grid-column: full-start / full-end;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .header__logo {
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: $base-margin * 2;
+    margin-top: -6rem;
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(202, 254, 141);
+    background: linear-gradient(
+      145deg,
+      rgba(202, 254, 141, 0.4) 0%,
+      rgba(133, 188, 69, 0.45) 75%
+    );
+    width: 100%;
+    height: 100vh;
+  }
+}
