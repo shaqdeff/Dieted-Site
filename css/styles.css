@@ -14,3 +14,51 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(2, minmax(min-content, 60rem)) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 100vh min-content;
+}
+
+.heading-1 {
+  font-family: "Pacifico", cursive;
+  color: rgb(40, 40, 40);
+}
+.heading-1--white {
+  color: rgb(255, 255, 255);
+}
+
+.heading-2 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(40, 40, 40);
+}
+.heading-2--light {
+  font-weight: 300;
+}
+.heading-2--medium {
+  font-weight: 400;
+}
+.heading-2--bold {
+  font-weight: 600;
+}
+.heading-2--white {
+  color: rgb(255, 255, 255);
+}
+
+.body-text {
+  font-family: "Roboto", sans-serif;
+  color: rgb(40, 40, 40);
+}
+.body-text--light {
+  font-weight: 300;
+}
+.body-text--medium {
+  font-weight: 500;
+}
+.body-text--bold {
+  font-weight: 700;
+}
+.body-text--white {
+  color: rgb(255, 255, 255);
+}
