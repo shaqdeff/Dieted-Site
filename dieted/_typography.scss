@@ -1,0 +1,53 @@
+// section headings
+.heading-1 {
+  font-family: $font-heading;
+  color: $black;
+
+  &--white {
+    color: $white;
+  }
+}
+
+// sub-heading
+.heading-2 {
+  font-family: $font-primary;
+  color: $black;
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--medium {
+    font-weight: 400;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--white {
+    color: $white;
+  }
+}
+
+// body text
+.body-text {
+  font-family: $font-body;
+  color: $black;
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--white {
+    color: $white;
+  }
+}
