@@ -2,6 +2,7 @@
 .heading-1 {
   font-family: $font-heading;
   color: $font-color;
+  z-index: 1;
 
   &--white {
     color: $body-color;
