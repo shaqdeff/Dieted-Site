@@ -19,6 +19,10 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(2, minmax(min-content, 60rem)) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: 100vh min-content;
 }
+.container ::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(133, 188, 69);
+}
 
 .header {
   grid-column: full-start/full-end;
@@ -36,7 +40,7 @@ body {
   top: 0;
   left: 0;
   margin-left: -3rem;
-  margin-top: -6rem;
+  margin-top: -5.5rem;
   grid-column: 1/span 1;
   justify-self: flex-start;
 }
@@ -52,7 +56,7 @@ body {
   top: 0;
   left: 0;
   background: rgb(202, 254, 141);
-  background: linear-gradient(145deg, rgba(202, 254, 141, 0.5) 0%, rgba(133, 188, 69, 0.5) 75%);
+  background: linear-gradient(145deg, rgba(202, 254, 141, 0.4) 0%, rgba(133, 188, 69, 0.35) 75%);
   width: 100%;
   height: 100vh;
 }
@@ -61,6 +65,7 @@ body {
   grid-column: 1/-1;
   justify-self: center;
   align-self: flex-end;
+  margin-bottom: -3rem;
 }
 .header__heading-secondary {
   letter-spacing: 0.5rem;
@@ -68,13 +73,38 @@ body {
   grid-column: 1/-1;
   justify-self: center;
   align-self: flex-start;
-  margin-top: -1.5rem;
+  margin-top: 1.5rem;
   margin-left: 2rem;
 }
 .header__btn {
   grid-column: 1/-1;
   justify-self: center;
   align-self: flex-start;
+}
+
+.header__nav {
+  grid-column: 2/span 1;
+  justify-self: flex-end;
+  align-items: center;
+}
+.header__nav-items {
+  display: flex;
+  list-style: none;
+}
+.header__nav-links {
+  margin-left: 4rem;
+}
+.header__nav-link:link, .header__nav-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+.header__nav-link:link:hover, .header__nav-link:visited:hover {
+  color: rgb(150, 212, 78);
+}
+.header__nav .active {
+  color: rgb(150, 212, 78);
 }
 
 .heading-1 {
@@ -118,4 +148,25 @@ body {
 }
 .body-text--white {
   color: rgb(255, 255, 255);
+}
+
+.btn {
+  height: 4rem;
+  width: 20rem;
+  border-radius: 20rem;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(40, 40, 40, 0.3);
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+.btn-green {
+  background-color: rgb(133, 188, 69);
+  color: rgb(255, 255, 255);
+}
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-0.3rem);
+  background: rgb(68, 189, 50);
 }

@@ -1,0 +1,22 @@
+.btn {
+  height: 4rem;
+  width: 20rem;
+  border-radius: 20rem;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba($font-color, 0.3);
+  transition: all 0.2s;
+  margin-top: 1rem;
+
+  &-green {
+    background-color: $primary-green;
+    color: $body-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    background: $secondary-green;
+  }
+}

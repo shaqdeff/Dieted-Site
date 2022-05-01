@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     margin-left: -3rem;
-    margin-top: -6rem;
+    margin-top: -5.5rem;
     grid-column: 1 / span 1;
     justify-self: flex-start;
   }
@@ -34,8 +34,8 @@
     background: rgb(202, 254, 141);
     background: linear-gradient(
       145deg,
-      rgba(202, 254, 141, 0.5) 0%,
-      rgba(133, 188, 69, 0.5) 75%
+      rgba(202, 254, 141, 0.4) 0%,
+      rgba(133, 188, 69, 0.35) 75%
     );
     width: 100%;
     height: 100vh;
@@ -47,6 +47,7 @@
     grid-column: 1 / -1;
     justify-self: center;
     align-self: flex-end;
+    margin-bottom: -3rem;
   }
 
   // Good things come from nature
@@ -56,7 +57,7 @@
     grid-column: 1 / -1;
     justify-self: center;
     align-self: flex-start;
-    margin-top: -1.5rem;
+    margin-top: 1.5rem;
     margin-left: 2rem;
   }
 
