@@ -150,6 +150,37 @@ body {
   grid-column: 3/4;
 }
 
+.caption {
+  grid-column: full-start/full-end;
+  background: url(../images/bg-caption.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 10rem;
+  border: 0.5rem solid rgb(255, 255, 255);
+  outline: 0.5rem solid rgb(255, 255, 255);
+  outline-offset: -8rem;
+}
+.caption__main-heading-sub {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: rgb(68, 189, 50);
+  letter-spacing: 0.4rem;
+}
+.caption__main-heading {
+  font-size: 8rem;
+  letter-spacing: 0.4rem;
+}
+.caption__secondary-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .heading-1 {
   font-family: "Pacifico", cursive;
   color: rgb(40, 40, 40);

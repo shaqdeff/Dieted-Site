@@ -1,0 +1,37 @@
+.caption {
+  grid-column: full-start / full-end;
+
+  background: url(../images/bg-caption.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 10rem;
+  border: 0.5rem solid $body-color;
+
+  outline: 0.5rem solid $body-color;
+  outline-offset: -8rem;
+
+  &__main-heading-sub {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    color: $secondary-green;
+    letter-spacing: 0.4rem;
+  }
+
+  &__main-heading {
+    font-size: 8rem;
+    letter-spacing: 0.4rem;
+  }
+
+  &__secondary-heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
