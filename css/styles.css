@@ -18,6 +18,7 @@ body {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(2, minmax(min-content, 60rem)) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: 100vh min-content;
+  row-gap: 2rem;
 }
 .container ::selection {
   color: rgb(255, 255, 255);
@@ -115,6 +116,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 2rem;
+  padding-bottom: 3rem;
 }
 .about__title {
   font-size: 5rem;
@@ -140,6 +142,12 @@ body {
 }
 .about__info__main-text {
   font-size: 1.5rem;
+}
+.about__info--1, .about__info--3 {
+  grid-column: 1/2;
+}
+.about__info--2, .about__info--4 {
+  grid-column: 3/4;
 }
 
 .heading-1 {

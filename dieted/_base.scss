@@ -24,6 +24,7 @@ body {
     )
     [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: 100vh min-content;
+  row-gap: 2rem;
 
   ::selection {
     color: $body-color;
