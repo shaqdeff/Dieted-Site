@@ -1,0 +1,49 @@
+.about {
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  row-gap: 2rem;
+
+  align-items: center;
+  text-align: center;
+
+  margin-top: $base-margin * 2;
+
+  // Welcome to Dieted
+  &__title {
+    font-size: 5rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  // Fruit of Heart
+  &__image {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  // Overall style for each item
+  &__info {
+    padding: 0 5rem;
+
+    // Sprites
+    &__icon {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    // Info heading
+    &__main-heading {
+      font-size: 1.8rem;
+    }
+
+    // Sub text
+    &__main-text {
+      font-size: 1.5rem;
+    }
+  }
+}
